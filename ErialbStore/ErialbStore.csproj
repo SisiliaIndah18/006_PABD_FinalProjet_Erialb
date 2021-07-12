@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10098A69-995D-4174-81BC-56A46F8F8350}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ErialbStore</RootNamespace>
+    <AssemblyName>ErialbStore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ErialbStoreDataPembayaran.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErialbStoreDataPembayaran.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErialbStoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErialbStoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErialbStoreDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErialbStoreDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErialbStoreDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErialbStoreDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErialbStoreDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErialbStoreDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErialbStoreDataSupplier.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErialbStoreDataSupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErialbStorePembayaran.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErialbStorePembayaran.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailPemesanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailPemesanan.Designer.cs">
+      <DependentUpon>FormDetailPemesanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListDetail.Designer.cs">
+      <DependentUpon>FormListDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembayaran.Designer.cs">
+      <DependentUpon>FormPembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPemesan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPemesan.Designer.cs">
+      <DependentUpon>FormPemesan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPemesanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPemesanan.Designer.cs">
+      <DependentUpon>FormPemesanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplier.Designer.cs">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListPembayaran.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListPembayaran.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListSupplier.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListSupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailPemesanan.resx">
+      <DependentUpon>FormDetailPemesanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListDetail.resx">
+      <DependentUpon>FormListDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPembayaran.resx">
+      <DependentUpon>FormPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPemesan.resx">
+      <DependentUpon>FormPemesan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPemesanan.resx">
+      <DependentUpon>FormPemesanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplier.resx">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ErialbStoreDataPembayaran.xsc">
+      <DependentUpon>ErialbStoreDataPembayaran.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataPembayaran.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErialbStoreDataPembayaran.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ErialbStoreDataPembayaran.xss">
+      <DependentUpon>ErialbStoreDataPembayaran.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet.xsc">
+      <DependentUpon>ErialbStoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErialbStoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ErialbStoreDataSet.xss">
+      <DependentUpon>ErialbStoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet1.xsc">
+      <DependentUpon>ErialbStoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErialbStoreDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ErialbStoreDataSet1.xss">
+      <DependentUpon>ErialbStoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet2.xsc">
+      <DependentUpon>ErialbStoreDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErialbStoreDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ErialbStoreDataSet2.xss">
+      <DependentUpon>ErialbStoreDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet3.xsc">
+      <DependentUpon>ErialbStoreDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErialbStoreDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ErialbStoreDataSet3.xss">
+      <DependentUpon>ErialbStoreDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSupplier.xsc">
+      <DependentUpon>ErialbStoreDataSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStoreDataSupplier.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErialbStoreDataSupplier.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ErialbStoreDataSupplier.xss">
+      <DependentUpon>ErialbStoreDataSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStorePembayaran.xsc">
+      <DependentUpon>ErialbStorePembayaran.xsd</DependentUpon>
+    </None>
+    <None Include="ErialbStorePembayaran.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ErialbStorePembayaran.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ErialbStorePembayaran.xss">
+      <DependentUpon>ErialbStorePembayaran.xsd</DependentUpon>
+    </None>
+    <None Include="ListPembayaran.xsc">
+      <DependentUpon>ListPembayaran.xsd</DependentUpon>
+    </None>
+    <None Include="ListPembayaran.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListPembayaran.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ListPembayaran.xss">
+      <DependentUpon>ListPembayaran.xsd</DependentUpon>
+    </None>
+    <None Include="ListSupplier.xsc">
+      <DependentUpon>ListSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="ListSupplier.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListSupplier.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ListSupplier.xss">
+      <DependentUpon>ListSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
