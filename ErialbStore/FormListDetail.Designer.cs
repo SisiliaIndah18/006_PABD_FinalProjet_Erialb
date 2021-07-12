@@ -44,6 +44,8 @@
             this.namaSupplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pengirimanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDPemesanDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.listSupplier = new ErialbStore.ListSupplier();
             this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.erialbStoreDataSupplier = new ErialbStore.ErialbStoreDataSupplier();
             this.pembayaranTableAdapter = new ErialbStore.ErialbStoreDataPembayaranTableAdapters.PembayaranTableAdapter();
@@ -60,15 +62,13 @@
             this.supplierBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.supplierTableAdapter1 = new ErialbStore.ErialbStoreDataSet2TableAdapters.SupplierTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.listPembayaran = new ErialbStore.ListPembayaran();
-            this.pembayaranBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.pembayaranTableAdapter3 = new ErialbStore.ListPembayaranTableAdapters.PembayaranTableAdapter();
             this.kodePembayaranDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDPemesanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metodePembayaranDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalHargaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listSupplier = new ErialbStore.ListSupplier();
-            this.supplierBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.pembayaranBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.listPembayaran = new ErialbStore.ListPembayaran();
+            this.pembayaranTableAdapter3 = new ErialbStore.ListPembayaranTableAdapters.PembayaranTableAdapter();
             this.supplierTableAdapter2 = new ErialbStore.ListSupplierTableAdapters.SupplierTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pembayaranBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataPembayaran)).BeginInit();
@@ -78,6 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erialbStorePembayaran)).BeginInit();
@@ -87,10 +89,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listPembayaran)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pembayaranBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listSupplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listPembayaran)).BeginInit();
             this.SuspendLayout();
             // 
             // pembayaranBindingSource
@@ -117,11 +117,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.Font = new System.Drawing.Font("Castellar", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(277, 26);
+            this.label1.Location = new System.Drawing.Point(261, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 48);
+            this.label1.Size = new System.Drawing.Size(198, 53);
             this.label1.TabIndex = 24;
             this.label1.Text = "ERIALB";
             // 
@@ -192,6 +192,16 @@
             this.iDPemesanDataGridViewTextBoxColumn1.Name = "iDPemesanDataGridViewTextBoxColumn1";
             this.iDPemesanDataGridViewTextBoxColumn1.Width = 150;
             // 
+            // supplierBindingSource2
+            // 
+            this.supplierBindingSource2.DataMember = "Supplier";
+            this.supplierBindingSource2.DataSource = this.listSupplier;
+            // 
+            // listSupplier
+            // 
+            this.listSupplier.DataSetName = "ListSupplier";
+            this.listSupplier.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // supplierBindingSource
             // 
             this.supplierBindingSource.DataMember = "Supplier";
@@ -216,7 +226,7 @@
             this.label2.BackColor = System.Drawing.Color.SaddleBrown;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F);
             this.label2.ForeColor = System.Drawing.Color.SeaShell;
-            this.label2.Location = new System.Drawing.Point(68, 83);
+            this.label2.Location = new System.Drawing.Point(68, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 26);
             this.label2.TabIndex = 28;
@@ -293,20 +303,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(620, 150);
             this.dataGridView1.TabIndex = 30;
             // 
-            // listPembayaran
-            // 
-            this.listPembayaran.DataSetName = "ListPembayaran";
-            this.listPembayaran.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pembayaranBindingSource3
-            // 
-            this.pembayaranBindingSource3.DataMember = "Pembayaran";
-            this.pembayaranBindingSource3.DataSource = this.listPembayaran;
-            // 
-            // pembayaranTableAdapter3
-            // 
-            this.pembayaranTableAdapter3.ClearBeforeFill = true;
-            // 
             // kodePembayaranDataGridViewTextBoxColumn
             // 
             this.kodePembayaranDataGridViewTextBoxColumn.DataPropertyName = "Kode_Pembayaran";
@@ -339,15 +335,19 @@
             this.totalHargaDataGridViewTextBoxColumn.Name = "totalHargaDataGridViewTextBoxColumn";
             this.totalHargaDataGridViewTextBoxColumn.Width = 125;
             // 
-            // listSupplier
+            // pembayaranBindingSource3
             // 
-            this.listSupplier.DataSetName = "ListSupplier";
-            this.listSupplier.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.pembayaranBindingSource3.DataMember = "Pembayaran";
+            this.pembayaranBindingSource3.DataSource = this.listPembayaran;
             // 
-            // supplierBindingSource2
+            // listPembayaran
             // 
-            this.supplierBindingSource2.DataMember = "Supplier";
-            this.supplierBindingSource2.DataSource = this.listSupplier;
+            this.listPembayaran.DataSetName = "ListPembayaran";
+            this.listPembayaran.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pembayaranTableAdapter3
+            // 
+            this.pembayaranTableAdapter3.ClearBeforeFill = true;
             // 
             // supplierTableAdapter2
             // 
@@ -378,6 +378,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erialbStorePembayaran)).EndInit();
@@ -387,10 +389,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listPembayaran)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pembayaranBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listSupplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listPembayaran)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

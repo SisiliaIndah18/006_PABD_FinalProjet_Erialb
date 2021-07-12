@@ -45,7 +45,7 @@
             this.erialbToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(468, 47);
+            this.menuStrip1.Size = new System.Drawing.Size(468, 51);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -55,37 +55,37 @@
             this.rekapPemesanToolStripMenuItem,
             this.rekapPembayaranToolStripMenuItem,
             this.rekapSupplierToolStripMenuItem});
-            this.erialbToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.erialbToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.erialbToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon;
             this.erialbToolStripMenuItem.Name = "erialbToolStripMenuItem";
-            this.erialbToolStripMenuItem.Size = new System.Drawing.Size(224, 43);
+            this.erialbToolStripMenuItem.Size = new System.Drawing.Size(220, 47);
             this.erialbToolStripMenuItem.Text = "Erialb Menu";
             this.erialbToolStripMenuItem.Click += new System.EventHandler(this.erialbToolStripMenuItem_Click);
             // 
             // rekapPemesanToolStripMenuItem
             // 
-            this.rekapPemesanToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rekapPemesanToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rekapPemesanToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.rekapPemesanToolStripMenuItem.Name = "rekapPemesanToolStripMenuItem";
-            this.rekapPemesanToolStripMenuItem.Size = new System.Drawing.Size(291, 30);
+            this.rekapPemesanToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
             this.rekapPemesanToolStripMenuItem.Text = "Rekap Pemesan";
             this.rekapPemesanToolStripMenuItem.Click += new System.EventHandler(this.rekapPemesanToolStripMenuItem_Click);
             // 
             // rekapPembayaranToolStripMenuItem
             // 
-            this.rekapPembayaranToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.rekapPembayaranToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
             this.rekapPembayaranToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.rekapPembayaranToolStripMenuItem.Name = "rekapPembayaranToolStripMenuItem";
-            this.rekapPembayaranToolStripMenuItem.Size = new System.Drawing.Size(291, 30);
+            this.rekapPembayaranToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
             this.rekapPembayaranToolStripMenuItem.Text = "Rekap Pembayaran";
             this.rekapPembayaranToolStripMenuItem.Click += new System.EventHandler(this.rekapPembayaranToolStripMenuItem_Click);
             // 
             // rekapSupplierToolStripMenuItem
             // 
-            this.rekapSupplierToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.rekapSupplierToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
             this.rekapSupplierToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.rekapSupplierToolStripMenuItem.Name = "rekapSupplierToolStripMenuItem";
-            this.rekapSupplierToolStripMenuItem.Size = new System.Drawing.Size(291, 30);
+            this.rekapSupplierToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
             this.rekapSupplierToolStripMenuItem.Text = "Rekap Supplier";
             this.rekapSupplierToolStripMenuItem.Click += new System.EventHandler(this.rekapSupplierToolStripMenuItem_Click);
             // 

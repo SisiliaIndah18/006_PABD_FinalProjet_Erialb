@@ -46,11 +46,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Ekuador City", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.Font = new System.Drawing.Font("Castellar", 25.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(255, 38);
+            this.label1.Location = new System.Drawing.Point(200, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 64);
+            this.label1.Size = new System.Drawing.Size(198, 53);
             this.label1.TabIndex = 52;
             this.label1.Text = "ERIALB";
             // 
@@ -59,9 +59,10 @@
             this.button1.BackColor = System.Drawing.Color.SaddleBrown;
             this.button1.Font = new System.Drawing.Font("MV Boli", 10F);
             this.button1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button1.Location = new System.Drawing.Point(152, 358);
+            this.button1.Location = new System.Drawing.Point(135, 286);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 52);
+            this.button1.Size = new System.Drawing.Size(85, 42);
             this.button1.TabIndex = 59;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
@@ -71,9 +72,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.label2.Location = new System.Drawing.Point(42, 125);
+            this.label2.Location = new System.Drawing.Point(37, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 26);
+            this.label2.Size = new System.Drawing.Size(148, 22);
             this.label2.TabIndex = 60;
             this.label2.Text = "Kode Pembayaran";
             // 
@@ -81,9 +82,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.label3.Location = new System.Drawing.Point(42, 181);
+            this.label3.Location = new System.Drawing.Point(37, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 26);
+            this.label3.Size = new System.Drawing.Size(98, 22);
             this.label3.TabIndex = 61;
             this.label3.Text = "Id Pemesan";
             // 
@@ -91,41 +92,44 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.label4.Location = new System.Drawing.Point(42, 237);
+            this.label4.Location = new System.Drawing.Point(37, 190);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(206, 26);
+            this.label4.Size = new System.Drawing.Size(169, 22);
             this.label4.TabIndex = 62;
             this.label4.Text = "Metode Pembayaran";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(281, 127);
+            this.textBox1.Location = new System.Drawing.Point(250, 102);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 26);
+            this.textBox1.Size = new System.Drawing.Size(294, 22);
             this.textBox1.TabIndex = 63;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(281, 183);
+            this.textBox2.Location = new System.Drawing.Point(250, 146);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(330, 26);
+            this.textBox2.Size = new System.Drawing.Size(294, 22);
             this.textBox2.TabIndex = 64;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.label5.Location = new System.Drawing.Point(42, 290);
+            this.label5.Location = new System.Drawing.Point(37, 232);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 26);
+            this.label5.Size = new System.Drawing.Size(102, 22);
             this.label5.TabIndex = 66;
             this.label5.Text = "Total Harga";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(281, 292);
+            this.textBox4.Location = new System.Drawing.Point(250, 234);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(330, 26);
+            this.textBox4.Size = new System.Drawing.Size(294, 22);
             this.textBox4.TabIndex = 67;
             // 
             // comboBox1
@@ -136,9 +140,10 @@
             "BRI",
             "Dana",
             "Shopee Pay"});
-            this.comboBox1.Location = new System.Drawing.Point(281, 234);
+            this.comboBox1.Location = new System.Drawing.Point(250, 187);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(330, 28);
+            this.comboBox1.Size = new System.Drawing.Size(294, 24);
             this.comboBox1.TabIndex = 68;
             // 
             // button2
@@ -146,9 +151,10 @@
             this.button2.BackColor = System.Drawing.Color.SaddleBrown;
             this.button2.Font = new System.Drawing.Font("MV Boli", 10F);
             this.button2.ForeColor = System.Drawing.Color.Cornsilk;
-            this.button2.Location = new System.Drawing.Point(338, 358);
+            this.button2.Location = new System.Drawing.Point(300, 286);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 52);
+            this.button2.Size = new System.Drawing.Size(180, 42);
             this.button2.TabIndex = 69;
             this.button2.Text = "List Pembayaran";
             this.button2.UseVisualStyleBackColor = false;
@@ -156,11 +162,11 @@
             // 
             // FormPembayaran
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(657, 440);
+            this.ClientSize = new System.Drawing.Size(584, 352);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);
@@ -172,6 +178,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormPembayaran";
             this.Text = "Pembayaran";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormPembayaran_FormClosed);

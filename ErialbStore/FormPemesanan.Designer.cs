@@ -37,6 +37,8 @@
             this.alamatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jenisAlbumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jumlahAlbumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pemesanBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.erialbStoreDataSet3 = new ErialbStore.ErialbStoreDataSet3();
             this.pemesanBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.erialbStoreDataSet = new ErialbStore.ErialbStoreDataSet();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,17 +47,15 @@
             this.pemesanBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.pemesanBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pemesanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.erialbStoreDataSet3 = new ErialbStore.ErialbStoreDataSet3();
-            this.pemesanBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.pemesanTableAdapter1 = new ErialbStore.ErialbStoreDataSet3TableAdapters.PemesanTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -128,6 +128,16 @@
             this.jumlahAlbumDataGridViewTextBoxColumn.Name = "jumlahAlbumDataGridViewTextBoxColumn";
             this.jumlahAlbumDataGridViewTextBoxColumn.Width = 150;
             // 
+            // pemesanBindingSource4
+            // 
+            this.pemesanBindingSource4.DataMember = "Pemesan";
+            this.pemesanBindingSource4.DataSource = this.erialbStoreDataSet3;
+            // 
+            // erialbStoreDataSet3
+            // 
+            this.erialbStoreDataSet3.DataSetName = "ErialbStoreDataSet3";
+            this.erialbStoreDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // pemesanBindingSource3
             // 
             this.pemesanBindingSource3.DataMember = "Pemesan";
@@ -142,11 +152,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.Font = new System.Drawing.Font("Castellar", 25.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(292, 39);
+            this.label1.Location = new System.Drawing.Point(254, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 48);
+            this.label1.Size = new System.Drawing.Size(198, 53);
             this.label1.TabIndex = 20;
             this.label1.Text = "ERIALB";
             // 
@@ -180,16 +190,6 @@
             // 
             this.pemesanBindingSource.DataMember = "Pemesan";
             // 
-            // erialbStoreDataSet3
-            // 
-            this.erialbStoreDataSet3.DataSetName = "ErialbStoreDataSet3";
-            this.erialbStoreDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pemesanBindingSource4
-            // 
-            this.pemesanBindingSource4.DataMember = "Pemesan";
-            this.pemesanBindingSource4.DataSource = this.erialbStoreDataSet3;
-            // 
             // pemesanTableAdapter1
             // 
             this.pemesanTableAdapter1.ClearBeforeFill = true;
@@ -208,13 +208,13 @@
             this.Text = "Pemesanan";
             this.Load += new System.EventHandler(this.FormPemesanan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.erialbStoreDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pemesanBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
