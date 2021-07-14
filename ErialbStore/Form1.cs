@@ -45,6 +45,43 @@ namespace ErialbStore
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            menuLogin.Enabled = false;
+        }
+
+        void MenuDisable()
+        {
+            menuLogin.Enabled = true;
+            menuLogout.Enabled = false;
+            menuErialb.Enabled = false;
+            menuPemesan.Enabled = false;
+            menuPembayaran.Enabled = false;
+            menuSupplier.Enabled = false;
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLogin fl = new FormLogin();
+            fl.Show();
+            this.Hide();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuDisable();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void menuOwner_Click(object sender, EventArgs e)
+        {
 
         }
     }

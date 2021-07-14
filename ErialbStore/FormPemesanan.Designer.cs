@@ -156,7 +156,7 @@
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(254, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 53);
+            this.label1.Size = new System.Drawing.Size(195, 52);
             this.label1.TabIndex = 20;
             this.label1.Text = "ERIALB";
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ErialbStore
 {
@@ -42,6 +43,21 @@ namespace ErialbStore
             fdp.label5.Text = this.dataGridView1.CurrentRow.Cells[4].Value.ToString();
             fdp.label6.Text = this.dataGridView1.CurrentRow.Cells[5].Value.ToString();
             fdp.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

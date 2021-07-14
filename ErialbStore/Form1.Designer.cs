@@ -30,10 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.erialbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rekapPemesanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rekapPembayaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rekapSupplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuOwner = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuLogin = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuLogout = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuErialb = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPemesan = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPembayaran = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSupplier = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,52 +47,100 @@
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(175)))), ((int)(((byte)(143)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.erialbToolStripMenuItem});
+            this.menuOwner,
+            this.menuErialb});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(468, 51);
+            this.menuStrip1.Size = new System.Drawing.Size(468, 49);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // erialbToolStripMenuItem
+            // menuOwner
             // 
-            this.erialbToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rekapPemesanToolStripMenuItem,
-            this.rekapPembayaranToolStripMenuItem,
-            this.rekapSupplierToolStripMenuItem});
-            this.erialbToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.erialbToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon;
-            this.erialbToolStripMenuItem.Name = "erialbToolStripMenuItem";
-            this.erialbToolStripMenuItem.Size = new System.Drawing.Size(220, 47);
-            this.erialbToolStripMenuItem.Text = "Erialb Menu";
-            this.erialbToolStripMenuItem.Click += new System.EventHandler(this.erialbToolStripMenuItem_Click);
+            this.menuOwner.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuLogin,
+            this.menuLogout,
+            this.toolStripMenuItem1,
+            this.menuExit});
+            this.menuOwner.Font = new System.Drawing.Font("Bradley Hand ITC", 19.8F, System.Drawing.FontStyle.Bold);
+            this.menuOwner.ForeColor = System.Drawing.Color.Maroon;
+            this.menuOwner.Name = "menuOwner";
+            this.menuOwner.Size = new System.Drawing.Size(127, 45);
+            this.menuOwner.Text = "Owner";
+            this.menuOwner.Click += new System.EventHandler(this.menuOwner_Click);
             // 
-            // rekapPemesanToolStripMenuItem
+            // menuLogin
             // 
-            this.rekapPemesanToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rekapPemesanToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.rekapPemesanToolStripMenuItem.Name = "rekapPemesanToolStripMenuItem";
-            this.rekapPemesanToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
-            this.rekapPemesanToolStripMenuItem.Text = "Rekap Pemesan";
-            this.rekapPemesanToolStripMenuItem.Click += new System.EventHandler(this.rekapPemesanToolStripMenuItem_Click);
+            this.menuLogin.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
+            this.menuLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.menuLogin.Name = "menuLogin";
+            this.menuLogin.Size = new System.Drawing.Size(224, 34);
+            this.menuLogin.Text = "Login";
+            this.menuLogin.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
-            // rekapPembayaranToolStripMenuItem
+            // menuLogout
             // 
-            this.rekapPembayaranToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
-            this.rekapPembayaranToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.rekapPembayaranToolStripMenuItem.Name = "rekapPembayaranToolStripMenuItem";
-            this.rekapPembayaranToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
-            this.rekapPembayaranToolStripMenuItem.Text = "Rekap Pembayaran";
-            this.rekapPembayaranToolStripMenuItem.Click += new System.EventHandler(this.rekapPembayaranToolStripMenuItem_Click);
+            this.menuLogout.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
+            this.menuLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.menuLogout.Name = "menuLogout";
+            this.menuLogout.Size = new System.Drawing.Size(224, 34);
+            this.menuLogout.Text = "Logout";
+            this.menuLogout.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
-            // rekapSupplierToolStripMenuItem
+            // toolStripMenuItem1
             // 
-            this.rekapSupplierToolStripMenuItem.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
-            this.rekapSupplierToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.rekapSupplierToolStripMenuItem.Name = "rekapSupplierToolStripMenuItem";
-            this.rekapSupplierToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
-            this.rekapSupplierToolStripMenuItem.Text = "Rekap Supplier";
-            this.rekapSupplierToolStripMenuItem.Click += new System.EventHandler(this.rekapSupplierToolStripMenuItem_Click);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
+            // 
+            // menuExit
+            // 
+            this.menuExit.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
+            this.menuExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.menuExit.Name = "menuExit";
+            this.menuExit.Size = new System.Drawing.Size(224, 34);
+            this.menuExit.Text = "Exit";
+            this.menuExit.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // menuErialb
+            // 
+            this.menuErialb.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuPemesan,
+            this.menuPembayaran,
+            this.menuSupplier});
+            this.menuErialb.Font = new System.Drawing.Font("Bradley Hand ITC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuErialb.ForeColor = System.Drawing.Color.Maroon;
+            this.menuErialb.Name = "menuErialb";
+            this.menuErialb.Size = new System.Drawing.Size(116, 45);
+            this.menuErialb.Text = "Menu";
+            this.menuErialb.Click += new System.EventHandler(this.erialbToolStripMenuItem_Click);
+            // 
+            // menuPemesan
+            // 
+            this.menuPemesan.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuPemesan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.menuPemesan.Name = "menuPemesan";
+            this.menuPemesan.Size = new System.Drawing.Size(321, 34);
+            this.menuPemesan.Text = "Rekap Pemesan";
+            this.menuPemesan.Click += new System.EventHandler(this.rekapPemesanToolStripMenuItem_Click);
+            // 
+            // menuPembayaran
+            // 
+            this.menuPembayaran.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
+            this.menuPembayaran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.menuPembayaran.Name = "menuPembayaran";
+            this.menuPembayaran.Size = new System.Drawing.Size(321, 34);
+            this.menuPembayaran.Text = "Rekap Pembayaran";
+            this.menuPembayaran.Click += new System.EventHandler(this.rekapPembayaranToolStripMenuItem_Click);
+            // 
+            // menuSupplier
+            // 
+            this.menuSupplier.Font = new System.Drawing.Font("Bradley Hand ITC", 13.8F, System.Drawing.FontStyle.Bold);
+            this.menuSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.menuSupplier.Name = "menuSupplier";
+            this.menuSupplier.Size = new System.Drawing.Size(321, 34);
+            this.menuSupplier.Text = "Rekap Supplier";
+            this.menuSupplier.Click += new System.EventHandler(this.rekapSupplierToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -112,10 +165,15 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem erialbToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rekapPemesanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rekapPembayaranToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rekapSupplierToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem menuOwner;
+        public System.Windows.Forms.ToolStripMenuItem menuLogin;
+        public System.Windows.Forms.ToolStripMenuItem menuLogout;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        public System.Windows.Forms.ToolStripMenuItem menuErialb;
+        public System.Windows.Forms.ToolStripMenuItem menuPemesan;
+        public System.Windows.Forms.ToolStripMenuItem menuPembayaran;
+        public System.Windows.Forms.ToolStripMenuItem menuSupplier;
+        public System.Windows.Forms.ToolStripMenuItem menuExit;
     }
 }
 
